@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bio - @ViewBag.Title</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div id="fullContent">
+        <div id="sidebar">
+            <img src="img/client2.png" alt="Info about image?" class="headshot" />
+            <span id="userName">Sam Someone</span>
+            <ul class="menu">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div>
+                <button id="sideBarToggle">Hide menu</button>
+            </div>
+            @RenderBody();
+        </div>
+    </div>
+    <div id="footer">
+        <footer>&copy; Karolis Kajėnas 2017</footer>
+    </div>
+
+    <script type="text/javascript" src="lib//jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+</body>
+</html>
