@@ -1,0 +1,5 @@
+﻿{
+  "MailSettings": {
+    "ToAddress":  "MyEmail@MailDomain.Extension"
+  } 
+}

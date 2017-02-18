@@ -12,6 +12,7 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
+        "MailSettings__ToAddress": "Some@dafuq.ftt",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
