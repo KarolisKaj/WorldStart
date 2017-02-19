@@ -21,14 +21,18 @@
 
 
     var $sidebarAndMain = $("#sidebar, #main");
+    var $icon = $("#sideBarToggle i.fa");
+
 
     $("#sideBarToggle").on("click", function () {
         $sidebarAndMain.toggleClass("hide-sidebar");
         if ($sidebarAndMain.hasClass("hide-sidebar")) {
-            $(this).text("Show Menu");
+            $icon.removeClass("fa-angle-left");
+            $icon.addClass("fa-angle-right");
         }
         else {
-            $(this).text("Hide Menu");
+            $icon.removeClass("fa-angle-right");
+            $icon.addClass("fa-angle-left");
         }
     });
 })();
